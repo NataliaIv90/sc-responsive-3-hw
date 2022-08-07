@@ -1,0 +1,52 @@
+:root {
+  --main-color: rgb(35, 39, 43);
+  --secondary-color: white;
+  --box-shadow: 8px 8px 10px rgba(35, 39, 43, 0.1);
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.container {
+  display: block;
+  margin: 50px auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.header {
+  background-color: var(--main-color);
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.dark-link {
+  color: var(--main-color);
+}
+
+.dark-link:hover {
+  text-decoration: none;
+}
+
+.light-link {
+  color: var(--secondary-color);
+}
+
+.light-link:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.nav-links {
+  box-shadow: var(--box-shadow);
+}
+
+.footer {
+  background-color: var(--main-color);
+  color: white;
+}

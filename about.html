@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/ed623032c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <meta
       name="description"
       content="Contact information of front end developer Natalia Ivantsova"
@@ -12,25 +28,28 @@
     <title>Front end developer - Natalia Ivantsova</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="homepage-link">
-          <a href="/">Back to the homepage</a>
-        </div>
+    <div class="container" class="mb-5">
+      <div class="mb-2">
+        <a href="/" class="dark-link">
+          <i class="fa-solid fa-circle-arrow-left"></i> Back to the homepage
+        </a>
+      </div>
+      <div class="header border rounded">
+        <div class="homepage-link"></div>
         <div>
           <h1>About me</h1>
           <h3>Front-end developer from Polonne, Ukraine</h3>
         </div>
       </div>
-      <div class="main-part">
-        <div>
+      <div class="main-part my-4 d-flex justify-content-between">
+        <div class="border m-1 p-3 text-center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             porro magnam atque dolorum omnis perferendis minus eaque dolor
             accusamus ab numquam quos necessitatibus, iusto, doloremque veniam
             ut dicta iste commodi.
           </p>
-          <br />
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
             nesciunt quae porro ab, molestias, labore dolorem, expedita error
@@ -38,14 +57,13 @@
             laborum dolor placeat.
           </p>
         </div>
-        <div>
+        <div class="border m-1 p-3 text-center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             porro magnam atque dolorum omnis perferendis minus eaque dolor
             accusamus ab numquam quos necessitatibus, iusto, doloremque veniam
             ut dicta iste commodi.
           </p>
-          <br />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
             nesciunt quae porro ab, molestias, labore dolorem, expedita error
@@ -54,9 +72,11 @@
           </p>
         </div>
       </div>
-      <div class="contact-me">
-        <h2>Contact me</h2>
-        <p><a href="mailto:spirit007@i.ua">spirit007@i.ua</a></p>
+      <div id="contact-me" class="footer p-3">
+        <h2>Contact me <i class="fa-solid fa-envelope"></i></i></h2>
+        <p class="text-center">
+          <a href="mailto:spirit007@i.ua" class="light-link">spirit007@i.ua</a>
+        </p>
       </div>
     </div>
   </body>
