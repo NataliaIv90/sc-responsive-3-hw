@@ -1,8 +1,9 @@
 :root {
   --main-color: rgb(35, 39, 43);
-  --secondary-color: white;
+  --secondary-color: rgb(255, 200, 0);
   --box-shadow: 8px 8px 10px rgba(35, 39, 43, 0.1);
 }
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -11,20 +12,34 @@ body {
   margin: 50px auto;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-
 .header {
-  background-color: var(--main-color);
+  background: var(--main-color);
   color: white;
   display: block;
   margin: 0 auto;
   padding: 30px;
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 86px;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 28px;
+}
 .dark-link {
   color: var(--main-color);
 }
@@ -50,3 +65,21 @@ h3 {
   background-color: var(--main-color);
   color: white;
 }
+
+@media (max-width: 560px) {
+  .header {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0px auto;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+} ;
